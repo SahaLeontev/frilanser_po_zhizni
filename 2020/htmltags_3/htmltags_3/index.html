@@ -11,22 +11,55 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
-		<form action="#" method="post" enctype="multipart/form-data"></form>
-
-		<div>
-			<input type="text" name="username" value="" >
-		</div>
-		<div>
-			<input type="password" name="userpass" value="" >
-		</div>
-		<div>
-			<p><input type="radio" name="beer" value="lager" > Светлое пиво </p>
-			<p><input type="radio" name="beer" value="dark" > Темное пиво </p>
-		</div>
-		<br>
-		<div>
-			<p><input type="radio" name="beer2" value="lager"> Светлое пиво </p>
-			<p><input type="radio" name="beer2" value="dark"> Темное пиво </p>
-		</div>
+		<form action="#" method="post" enctype="multipart/form-data">
+			<div>
+				<p>Имя</p>
+				<input tabindex="1" placeholder="Имя" type="text" name="username" value="">
+			</div>
+			<div>
+				<p>Пароль</p>
+				<div>
+					<input tabindex="2" placeholder="Пароль" type="password" name="userpass" value="">
+				</div>
+			</div>
+			<div>
+				<p>Телефон</p>
+				<div>
+					<input tabindex="3" placeholder="Номер телефона" type="tel" name="telephone" value="">
+				</div>
+				<p>Пол</p>
+				<div>
+					<input checked tabindex="4" type="radio" name="gender" value="male"> Мужской
+				</div>
+				<div>
+					<input tabindex="4" type="radio" name="gender" value="female"> Женский
+				</div>
+			</div>
+			<p>Имущество</p>
+			<div>
+				<input checked tabindex="5" type="checkbox" name="bicycle" value="yes"> Велик
+			</div>
+			<div>
+				<input tabindex="6" type="checkbox" name="car" value="yes"> Машина
+			</div>
+			<div>
+				<input disabled tabindex="7" type="checkbox" name="house" value="yes"> Дом
+			</div>
+			<p>Дополнительная информация</p>
+			<div>
+				<textarea tabindex="8" name="text"></textarea>
+			</div>
+			<p>Прикрепить фото</p>
+			<input tabindex="9" type="file" >
+			<p>Любимый цвет</p>
+			<select name="color">
+				<option value="red">Красный</option>
+				<option value="green">Зеленый</option>
+				<option selected value="yellow">Желтый</option>
+			</select>
+			<p>Действия</p>
+			<button type="submit">Отправить</button>
+			<button type="reset">Очистить</button>
+		</form>
 	</body>
 </html>
